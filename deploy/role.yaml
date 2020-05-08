@@ -26,22 +26,20 @@ rules:
   verbs:
   - '*'
 - apiGroups:
-  - monitoring.coreos.com
+  - ""
   resources:
-  - servicemonitors
+  - namespaces
   verbs:
   - get
-  - create
 - apiGroups:
-  - apps
-  resourceNames:
-  - mysql-operator
+  - ""
   resources:
-  - deployments/finalizers
+  - configmaps
+  - secrets
   verbs:
-  - update
+  - '*'
 - apiGroups:
-  - cache.example.com
+  - operator.com
   resources:
   - '*'
   verbs:

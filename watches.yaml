@@ -1,5 +1,5 @@
 ---
 - version: v1alpha1
-  group: cache.example.com
-  kind: Null
-  role: /opt/ansible/roles/null
+  group: operator.com
+  kind: Mysql
+  chart: /opt/helm/helm-charts/mysql
